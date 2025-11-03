@@ -11,7 +11,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <img src="/logo.svg" alt="PrintPro Partner logo" width="150" height="auto" loading="lazy" style="max-height:60px; justify-self:start;">
   <title>Wholesale Print and Promo That Cuts Chaos for Exec Teams</title>
   <meta name="description" content="Wholesale access to 80+ trade-only print and promo vendors for exec teams. Typical 10-25% savings, priority lanes, consistent quality. One-time $899 setup to qualify serious partners." />
   <link rel="canonical" href="https://printpropartner.com/">
@@ -95,7 +94,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         "@type":"Organization",
         "name":"PrintPro Partner",
         "url":"https://printpropartner.com/",
-        "logo":"https://printpropartner.com/logo.png",
+        "logo":"https://printpropartner.com/logo.svg",
         "contactPoint":{"@type":"ContactPoint","telephone":"+1-818-796-3412","contactType":"customer service","areaServed":"US"},
         "sameAs":[]
       },
@@ -137,6 +136,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a href="#main" class="hide">Skip to content</a>
   <header role="banner">
     <div class="container hero">
+      <img src="/PrintProPartner_SVG.svg" alt="PrintPro Partner logo" style="max-width:150px; height:auto; justify-self:start;">
       <span class="pill">Print and Promo — Wholesale Access</span>
       <h1>Exec-level print and promo: typical 10-25% wholesale savings</h1>
       <p class="sub">Tired of 20-30% overpays and proof delays? Unlock 80+ vendors, 10-25% savings, priority lanes with $899 setup.</p>
@@ -410,7 +410,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
              body: new FormData(form),
              headers: { 'Accept': 'application/json' }
            });
-           if (res.ok) { window.location.href = 'https://buy.stripe.com/14A8wO43t4dxfzr0mh9AA00'; }
+           if (res.ok) {
+             window.location.href = 'https://buy.stripe.com/14A8wO43t4dxfzr0mh9AA00';
            } else {
                const data = await res.json().catch(() => ({}));
                const msg = (data && data.errors && data.errors[0] && data.errors[0].message) || 'Submission failed. Please try again.';
